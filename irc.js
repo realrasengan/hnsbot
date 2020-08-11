@@ -9,15 +9,15 @@ const network = Network.get('main');
 const clientOptions = {
   network: network.type,
   port: network.rpcPort,
-  apiKey: 'keygoeshere'
+  apiKey: 'fb46901f7d93eba7b9e37c1164081b90c9e3951ea28478794d921ff80da6ae5b'
 }
 
 const nodeclient = new NodeClient(clientOptions);
 
-let client = new irc.Client('irc.freenode.net', 'nicknamegoeshere'', {
-  userName: "username",
+let client = new irc.Client('irc.imperialfamily.com', 'handshakebot', {
+  userName: "hns",
   realName: "handshake bot",
-  channels: ['#somechannel'],
+  channels: ['#handshake'],
   //secure: true,
 //  sasl: true,
   //password: "can uncomment sasl and put password here"
