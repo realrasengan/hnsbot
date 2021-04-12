@@ -14,6 +14,13 @@ const clientOptions = {
 
 const nodeclient = new NodeClient(clientOptions);
 
+var express = require('express');
+var app = express();
+const port = 11131;
+
+app.listen(port, () => console.log('Listening... '+port));
+
+
 let client = new irc.Client('irc.freenode.net', 'handshakeb0t', {
   userName: "hns",
   realName: "handshake bot",
